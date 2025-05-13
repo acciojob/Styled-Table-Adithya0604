@@ -1,1 +1,37 @@
 /* your code */
+.FullTableSection{
+	  margin: 7px; 
+	  border: 0px solid black;
+	  border-top-left-radius: 10px;
+	  border-top-right-radius: 10px;
+	  border-bottom-left-radius:10px;
+	  border-bottom-right-radius:10px;
+	  background-color: transparent;
+	  border-collapse: separate; /* Important: allow radius to be visible */
+	  border-spacing: 0;
+	  width: 100%;
+	  overflow: hidden;
+	  font-family:sans-serif;
+	  font-size:12px;
+}
+
+#FullHead{
+	color:white;
+	background-color:navy;
+}
+th:first-child{
+	border-top-left-radius:10px;
+}
+th:last-child{
+	border-top-right-radius:10px;
+}
+
+tbody tr:nth-child(even){
+	background-color:lightgray;
+}
+
+th, td{
+	padding:10px;
+	text-align:left;
+	border:none;
+}
